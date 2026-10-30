@@ -113,6 +113,7 @@ prompt percentages alone do not guarantee dimensions.
 ## Typography
 
 Follow typography.md.
+When using type 3 handwriting, also read handwriting-layout.md.
 
 - Type 1 is removed.
 - Type 2 is deferred.
