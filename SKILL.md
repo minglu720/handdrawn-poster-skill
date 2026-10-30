@@ -1,91 +1,216 @@
 ---
 name: hand-drawn-editorial-poster
-description: Create original editorial event posters with expressive hand-drawn line illustrations, loose typography, intentional negative space and tactile paper/ink qualities. Works with storefronts, buildings, objects, food, concepts, photographs and user-provided event details. Use for generating posters, analyzing references, or compiling production prompts.
+description: Create original editorial posters with sparse hand-drawn doodles, image-guided handwriting, configurable typography pairings, intentional negative space and tactile backgrounds. Supports storefronts, objects, food, concepts, source photographs and uploaded background images.
 ---
 
-# Hand-Drawn Editorial Poster Skill
+# Hand-Drawn Editorial Poster
 
 ## Purpose
-Turn user content into an original, recognizable yet flexible hand-drawn poster system. Learn visual grammar from the seven study references; never replicate specific brands, event identities, artwork or exact layouts.
 
-This review draft uses the installed skill’s references/visual-analysis.md as historical analysis. The production overrides below take precedence. Original installed files remain unchanged.
+Create original posters using economical doodles, expressive but controlled lettering and intentional open space.
 
-## Input
-Accept a theme, event brief, exact text, single object, storefront/building, source photograph, intended platform or size, desired color, or additional references. All fields are optional unless exact event information needs to be displayed. Do not invent unknown factual event details.
+Read references/visual-analysis.md for historical visual observations.
+Read typography.md for active typography roles and pairings.
 
-Distinguish image roles: **style reference** (style only), **source/edit target** (preserve defining features), and **supporting insert** (specified object/component). If a user supplies a specific subject photograph, prioritize its recognizable structure.
+The production rules in this file and typography.md take precedence over conflicting defaults in the historical reference analysis. Never copy reference brands, event identities, artwork or exact layouts.
 
-## Core rules
-1. **Human line, readable structure.** Use organic, moderately irregular contours, variable pressure and occasional overlaps. Keep the form legible; avoid sterile uniform vector linework.
-2. **Selective drawing, not tracing.** Preserve recognizable cues; omit unnecessary detail. Architectural motifs can show simplified windows, doors, awnings and hatching; isolated objects should not be rendered as storefronts.
-3. **Editorial hierarchy.** Coordinate an expressive title, one focal illustration, and clearly readable supporting information. Lettering may vary between handwriting, cursive and quiet non-serif supporting lettering.
-4. **Paper is part of the composition.** Allow meaningful open background and modest tactile grain. Paper must not automatically mean heavy faux-vintage distress.
+## Inputs
 
-## Adjustable design controls (defaults, not source measurements)
-- Canvas: portrait 4:5 unless specified otherwise.
-- Negative space: aim for ~35–60% open page; flex with copy length and subject complexity.
-- Palette: one ink + paper by default. Optional monochromatic reverse treatment or a restrained accent. Never enforce black-and-cream if subject warrants color.
-- Texture: low-to-moderate paper flecks and print irregularity, not muddy noise.
-- Typography: no required font family; handwritten title and legible details is a strong default.
+Accept any combination of:
 
-## Decide illustration pathway
-- IF a storefront/building is supplied → study its silhouette, entrance, windows, canopy and distinguishing visible features; produce a sparse facade doodle, not an architectural drawing.
-- ELSE IF a singular object or food is supplied → draw an economical icon-like object with a few distinctive contours and marks.
-- ELSE IF an abstract concept is supplied → propose one simple, concrete drawable visual metaphor; avoid gratuitous collage.
-- IF a detailed scene is drawn → reduce lettering flourishes and ornaments.
-- IF a very simple symbol is drawn → allow more idiosyncratic letterforms within the title-size cap below.
-- IF text is lengthy → limit expressive handwriting to headline and use precise readable type for logistics.
-- IF dark colored paper is requested → use light/reversed ink and preserve contrast.
+- Theme, subject or event brief.
+- Exact title and supporting copy.
+- Source photograph.
+- Uploaded background image.
+- Handwriting reference.
+- Font names or font files.
+- Canvas size, palette or typography pairing.
 
-## Layout selection — choose by content, not at random
-A. **Title / illustration / details**: a clear vertical editorial hierarchy.
-B. **Illustration as signboard**: handwriting integrated into the drawn subject when semantically appropriate.
-C. **Symbolic stack**: two or three small drawn elements forming a visual sentence, useful for food, time or a concept.
-D. **Expressive calligraphy plus quiet drawing**: title carries emotional weight; small accurate drawing and footer.
-Vary architecture, spacing and subject scale across outputs rather than repeating one arrangement.
+Do not invent unknown factual event details.
+
+Distinguish image roles:
+
+- Style reference: learn visual characteristics only.
+- Subject reference: preserve defining subject features.
+- Background asset: use as the actual composition background.
+- Lettering reference: learn letterform characteristics.
+- Supporting insert: include a specified component.
+
+One image may have multiple roles only when the user explicitly requests them.
+
+## Illustration rules
+
+### Doodle first
+
+Use quick, economical strokes with visible human irregularity:
+slight wobble, changing pressure, contour gaps and occasional overlaps.
+
+Keep the subject recognizable with only a few defining cues.
+Avoid polished vector outlines, photorealism and fully rendered scenes.
+
+### Storefronts and buildings
+
+Draw a sparse facade doodle rather than an architectural illustration.
+
+Prioritize:
+
+- Overall silhouette.
+- Entrance.
+- Main window arrangement.
+- Distinctive canopy or sign shape.
+
+Preserve distinctive proportions from a source photograph, while simplifying detail.
+
+Omit interior equipment, furniture inventories, ornate cornices,
+masonry patterns, individual leaves and dense crosshatching unless requested.
+
+Do not compensate for an overly detailed drawing by changing typography.
+Simplify the drawing first.
+
+### Objects and food
+
+Use an economical drawing with a few defining contours and marks.
+Do not introduce storefronts or architecture around an isolated object.
+
+### Abstract concepts
+
+Choose one simple, concrete drawable metaphor.
+Avoid unrelated doodles and gratuitous collage.
+
+## Composition
+
+Default canvas: portrait 4:5.
+
+Aim for approximately 35–60% intentional open background.
+This is a flexible design target, not a measured reference statistic.
+
+Choose composition according to content:
+
+- Title / doodle / supporting information.
+- Lettering integrated into a signboard when appropriate.
+- Two or three small symbols forming a visual sentence.
+- Expressive title with a quiet, smaller doodle.
+
+Vary placement, spacing and subject scale across outputs.
+Do not repeat the same storefront layout for every subject.
+
+## Title scale
+
+Use a provisional title bounding-box height of 15–25% of canvas height,
+including all title lines, and a maximum width of approximately 80%.
+
+These are operational starting points, not historical reference measurements.
+They implement the preference for a smaller title after the initial evaluation.
+The original skill had no numeric title range.
+
+Expressiveness should come from letterforms, rhythm and spacing,
+rather than automatically enlarging the title.
+
+Explicit user sizing overrides these defaults.
+If strict numeric compliance is requested, measure the finished layout;
+prompt percentages alone do not guarantee dimensions.
+
+## Typography
+
+Follow typography.md.
+
+- Type 1 is removed.
+- Type 2 is deferred.
+- Type 3 is the active image-guided handwriting.
+- Type 4 is supporting text only.
+- Type 5 is supporting text or specimen labels.
+
+Retain readable small-copy scale.
+Do not shrink practical information merely to create hierarchy.
+
+Use only as many typography roles as the content needs.
+Do not add a third font without a third information role.
+
+## Palette and texture
+
+Default to one dominant ink color on a quiet background.
+
+Allow restrained accents or reversed light ink on dark backgrounds.
+Do not enforce black and cream for every subject.
+
+For generated backgrounds, use subtle paper fibers, grain or print irregularity.
+Avoid heavy grunge, stains, torn edges and decorative aging unless requested.
+
+## Uploaded backgrounds
+
+Inspect a supplied background and use it as the actual editing or compositing base.
+
+Preserve its recognizable content, colors and texture.
+Do not replace it with generated cream paper or automatically add grain.
+
+Fit without stretching.
+Choose a crop that preserves important content; clarify if unavoidable cropping
+would remove a meaningful feature.
+
+Place text and drawing over quiet areas and select contrasting ink.
+If readability requires altering the background, explain the proposed adjustment.
+
+When exact pixel preservation matters, use separate overlays and compositing.
+Do not claim that generative editing guarantees unchanged background pixels.
+
+## Font rendering
+
+Distinguish image-guided lettering from exact font typesetting.
+
+For type 3:
+inspect the supplied lettering reference and generate related hand lettering.
+Do not claim an exact font or a verified complete alphabet.
+
+For exact named fonts:
+verify the font file and required glyphs, reserve text-free areas during image
+generation, then typeset using the actual font in a separate layout step.
+
+Do not silently substitute an unavailable font.
+Request the font file or agree on an alternative.
+
+Preserve editable text when supported by the deliverable format.
 
 ## Modes
-- **Analyze**: summarize evidence and fixed/variable rules; do not generate an image unless asked.
-- **Generate**: parse brief → choose subject pathway, palette, title hierarchy and layout → write final image prompt → generate image with available generation capability → inspect results.
-- **Prompt only**: provide production-ready prompt without claiming an image was generated.
-- **Analyze + Generate**: first extract rules and then produce a new poster.
 
-## Image prompt compiler
-For each output, assemble these instructions in order:
-1. Concrete original subject and necessary preservation features, with title and supplied information.
-2. Selected layout and positioning of drawing, typography and negative space.
-3. Illustration technique, line character, selective details, paper material, ink palette.
-4. Exclusions and quality constraints: no copied names/artwork, no photorealism or polished vectorism, no clutter or unnecessary ornaments.
-Use clear nouns and visual relationships rather than only abstract adjectives.
+- Analyze: describe visual rules without generating an image.
+- Generate: interpret the brief, choose composition and typography,
+  compile a prompt, generate, inspect and revise when needed.
+- Prompt only: provide a production-ready prompt without claiming generation.
+- Analyze + Generate: extract reference characteristics, then create new artwork.
+
+## Prompt compiler
+
+Include, in order:
+
+1. Subject, defining features and exact supplied copy.
+2. Composition, title scale, doodle placement and negative space.
+3. Typography roles, selected pairing and rendering method.
+4. Sparse drawing technique and details to omit.
+5. Background role, preservation requirements and ink contrast.
+6. Exclusions: copied identities, photorealism, polished vectorism,
+   dense rendering, unnecessary ornaments and invented event information.
+
+Use concrete visual relationships rather than abstract style adjectives alone.
 
 ## Quality gate
-Confirm: (1) correct user-supplied wording where text is essential, (2) recognizable subject when required, (3) visible hand-drawn irregularity, (4) confident visual hierarchy at thumbnail scale, (5) paper and background retained as an intentional part of design, (6) palette restrained, (7) not a copy of a reference, (8) no hallucinated event details. If a generated image fails, revise the prompt and retry when possible. For exact typographic fidelity, warn that image generation may require later layout editing.
 
-## Examples
-- “用这个 skill 把我上传的咖啡店照片做成开幕活动海报，保留店面门窗，标题 OPENING NIGHT。”
-- “以一碗意大利烩饭和一只钟为主体做一张新的手绘活动海报；不要画店面。”
-- “只分析参考文件夹里的线条、字体、材质和留白规则，不生图。”
-- “给我三个不同的版式方案，但要保持同一个手绘编辑风格。”
+Inspect the actual result for:
 
-## Revised production defaults — user feedback takes precedence
+- Correct supplied wording.
+- Recognizable subject.
+- Sparse doodle character rather than architectural rendering.
+- Visible human line irregularity.
+- Clear hierarchy at thumbnail scale.
+- Controlled title size and readable supporting copy.
+- Correct typography roles and pairing.
+- Intentional open background.
+- Restrained palette and texture.
+- Preservation of supplied background requirements.
+- Original composition rather than reference copying.
+- No invented factual event details.
 
-These controls supersede conflicting architectural, title-scale and typography suggestions above and in the historical references.
+A recognizable building can still fail if it is excessively detailed.
+Readable lettering can still fail if the title overwhelms the page.
 
-### Doodle rather than architectural illustration
-Use quick, economical, irregular strokes and a few defining cues. A storefront needs its silhouette, entrance, main window and distinctive canopy, not a rendered building study. Omit interior equipment, furniture inventories, ornate cornices, masonry, individual leaves and dense crosshatching unless requested. Slightly skewed proportions, gaps and overlapping lines should feel casual while preserving recognition. If the scene grows dense, simplify the drawing first. Detailed architectural rendering fails this quality gate even when recognizable.
-
-### Smaller display titles and non-serif supporting text
-Reduce the title size upper limit by approximately 20% relative to the first evaluation’s visual scale, not by 20 percentage points. The previous skill defined no numeric title range, so there is no existing measured cap to reduce exactly. As a new provisional control, target a title bounding box of 15–25% of canvas height, including all title lines, and no more than 80% of canvas width. Verify visually rather than treating prompt percentages as guaranteed dimensions. Explicit user sizing overrides this default. A simple symbol allows expressive letter shapes, not an automatically oversized title.
-
-Retain the successful small-copy scale. Prefer the TIME evaluation’s plain, spaced, monoline handwritten or sans-like supporting lettering. Do not default to serif details. Serif is available only when explicitly requested.
-
-### Uploaded background asset
-Accept a supplied background image as the actual base, distinct from a style reference or subject photograph. Inspect and use it in editing/compositing; preserve its recognizable content, texture and colors. Fit without stretching and disclose necessary cropping; clarify only if important content would be lost. Do not replace it with generated cream paper or automatically add grain. Place content over quiet regions and choose contrasting ink. Seek user direction if readability requires altering the background. Use separate overlay/compositing layers when exact background preservation matters; generative editing alone does not guarantee unchanged pixels.
-
-### Specified display font and pairing
-Accept a display handwriting font name, font file or lettering sample, plus a separate supporting font, weight, tracking and case when supplied. Honor the requested pairing. If only display is specified, choose a quiet non-serif monoline or sans companion; avoid competing decorative lettering.
-
-Distinguish approximate font-inspired image lettering from exact font rendering. For stylistic approximation, inspect the sample and guide letterforms without claiming exact font use. For exact typography, verify the real font file is available, generate illustration with reserved text-free areas, then typeset using that font in a separate layout step. Do not silently substitute a missing named font; request the file or agree an alternative. Preserve editable text when supported by the deliverable format.
-
-### Revised prompt and inspection gate
-Compile each prompt with sparse doodle features and explicit omissions, title bounding-box limits, display/support pairing, small non-serif copy, background role and preservation requirements. Inspect the actual image for these properties in addition to the original gates. Report dense architecture, excessive title scale, unrequested serif copy or substituted background/font as failures or partial results even if the original evaluation expectations pass. Numeric bounds require layout measurement if strict compliance is requested.
+Revise material failures when possible.
+Report remaining limitations honestly.
