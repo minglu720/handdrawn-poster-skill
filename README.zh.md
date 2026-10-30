@@ -1,8 +1,7 @@
 <div align="center">
 
-[English](./README.md) | [简体中文](./README.zh.md)
-
 # 手绘编辑海报 Skill
+[English](./README.md) | [简体中文](./README.zh.md)
 
 **将主题、文字、物件或照片，转化成线条松弛、排版鲜明、具有纸张触感的原创海报。**
 
