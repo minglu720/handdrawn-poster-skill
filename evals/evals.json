@@ -1,1 +1,31 @@
-
+{
+  "evals": [
+    {
+      "id": "test-01",
+      "prompt": "Create a poster featuring a cafe storefront.",
+      "expected": [
+        "Recognizable architectural structure",
+        "Imperfect hand-drawn contours",
+        "Clear typographic hierarchy"
+      ]
+    },
+    {
+      "id": "test-02",
+      "prompt": "Create a poster featuring a cup of tea.",
+      "expected": [
+        "Simplified object illustration",
+        "No unnecessary architecture",
+        "Balanced negative space"
+      ]
+    },
+    {
+      "id": "test-03",
+      "prompt": "Create a poster featuring a clock.",
+      "expected": [
+        "Minimal symbolic illustration",
+        "Expressive hand lettering",
+        "Readable composition"
+      ]
+    }
+  ]
+}
