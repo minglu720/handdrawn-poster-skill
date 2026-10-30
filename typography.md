@@ -1,64 +1,96 @@
 # Typography
 
-## Active roles
+## Reference files
+
+For type 3 handwriting, inspect:
+
+- assets/type-03-approved-poster.png — approved third-version poster.
+- assets/type-03-handwriting-reference.png — original lettering reference.
+
+The approved poster establishes the default lettering effect.
+The original reference provides supporting letterform observations.
+
+Use these images as lettering references only. Do not copy their wording,
+event details, illustrations, backgrounds or layouts into unrelated work.
+
+When using type 3, also read handwriting-layout.md.
+
+## Active typography roles
 
 | ID | Source | Allowed roles |
 | --- | --- | --- |
 | 1 | Removed | Do not use |
 | 2 | Deferred | Future alternative to type 3 |
-| 3 | assets/type-03-handwriting-reference.png | Title or all content |
-| 4 | Devanagari Sangam MN Regular | Supporting paragraphs, dates, addresses and small text |
+| 3 | Image-guided handwriting | Title or all content |
+| 4 | Devanagari Sangam MN Regular | Supporting paragraphs and practical small text |
 | 5 | Basier Square Mono Regular | Supporting text or specimen labels |
 
 Type 2 is not currently enabled.
-Do not invent its trigger keywords or substitute a font for it.
+Do not invent its trigger keywords or assign a substitute font.
 Its font and keyword routing will be configured later.
 
-## Type 3 — image-guided handwriting
+## Type 3 — light, relaxed handwriting
 
-Inspect assets/type-03-handwriting-reference.png before generating lettering.
+### Default character
 
-This image is a lettering reference only.
-Do not copy its event wording, dates, colored panels or layout.
+Match the approved third-version poster:
 
-### Shared characteristics
+- Fine pen strokes and light pressure.
+- Airy, open letterforms.
+- Mostly disconnected letters.
+- Naturally varied proportions and spacing.
+- Gentle differences in height and inclination.
+- Slight contour wobble.
+- Minimal retracing.
+- A relaxed, unforced writing rhythm.
 
-- Individually drawn, mostly disconnected letters.
-- Thin to medium pen strokes.
-- Uneven letter heights and baseline.
-- Naturally changing tilt and spacing.
-- Open counters.
-- Slight wobble and occasional retracing.
-- Casual doodle character.
+The result should feel written by hand with a fine pen.
+Do not make it look like a mechanically consistent handwriting font.
 
-Avoid polished calligraphy, mechanical consistency and generic brush lettering.
+Avoid heavy outlines, generic brush lettering, polished calligraphy,
+excessive retracing and exaggerated crookedness.
 
-### Variations within the reference
+Natural variation is the default.
+More noticeable deviations should be occasional accents,
+following handwriting-layout.md.
 
-The top black lettering is thin, airy and loosely constructed.
-Use this as the default letterform direction.
+### Title
 
-The middle red lettering is larger and more playful.
-Use it as an optional energy variation.
+Use expressive letter construction without making the title overpower
+the illustration or supporting information.
 
-The bottom green time lettering is heavier and slanted,
-while its address lettering is quieter.
+Preserve open counters and breathing room between letters.
+Allow individual letters to differ without making every letter eccentric.
 
-Do not force all variations into one poster.
-Choose a coherent treatment appropriate to the supplied content.
+Follow the title-scale controls in SKILL.md unless the user specifies otherwise.
+
+### Description and supporting information
+
+Use the same light writing character at a smaller scale.
+
+Keep descriptions, dates, times and locations readable.
+Supporting text should feel quieter than the title rather than heavier
+or equally dominant.
+
+Do not force title-sized irregularity into small text.
+Reduce variation when necessary to protect punctuation, numbers,
+email addresses, handles and other exact information.
 
 ### Roles
 
 Type 3 may be used:
 
-- Across the whole poster, with hierarchy mainly established by size.
+- Throughout the poster, with hierarchy established mainly by size,
+  spacing and placement.
 - For titles only, paired with type 4 or type 5.
 
-Preserve readability in small text.
-If generated small lettering is unreliable, use an enabled supporting font.
+Do not switch to a different lettering style for every information block.
 
-Image-guided lettering is a stylistic interpretation,
+Image-guided handwriting is a stylistic interpretation,
 not an exact font or a verified complete alphabet.
+
+The supplied references primarily demonstrate Latin lettering.
+Do not claim equivalent fidelity for an unsupported writing system.
 
 ## Type 4 — supporting text
 
@@ -71,21 +103,24 @@ Use for:
 - Short descriptions.
 - Dates and times.
 - Addresses.
-- Other practical small text.
+- Practical small text.
 
-Type 4 may be used only for dates and addresses when no paragraph is present.
-It must not be the sole typography family for an entire poster.
-Do not use it as the display title.
+When no paragraph is present, type 4 may still be used for dates,
+addresses and other practical details.
+
+Do not use it as the display title or as the sole typography family
+for an entire poster.
 
 No replacement supporting fonts are configured yet.
 
 Resolve the font from a supplied file or the local environment.
+
 On the user's current Mac, the supplied collection is:
 
 /System/Library/Fonts/Supplemental/Devanagari Sangam MN.ttc
 
-Before typesetting, verify the collection face and required glyph coverage.
-Do not silently render fallback glyphs and identify them as this font.
+Verify the collection face and required glyph coverage before typesetting.
+Do not silently use fallback glyphs and identify them as this font.
 
 ## Type 5 — supporting text and specimen labels
 
@@ -93,13 +128,13 @@ Font: Basier Square Mono.
 Face: Regular.
 Supplied filename: basier-square-mono-regular.ttf.
 
-Resolve it from a user-supplied file or the local environment.
+Resolve it from a supplied file or the local environment.
 Do not assume a machine-specific Desktop path exists elsewhere.
 
-Type 5 has two uses:
+Type 5 may:
 
-1. Replace type 4 for supporting text.
-2. Provide specimen labels when a third hierarchy level is needed.
+- Replace type 4 for supporting text.
+- Provide specimen labels when a third information level is needed.
 
 Examples of label roles:
 
@@ -108,11 +143,10 @@ Examples of label roles:
 - Index: NO. 03.
 - Section marker: FIELD NOTES.
 
-Do not invent labels merely to introduce another font.
+Do not invent a label merely to introduce a third font.
 Labels are not automatically the smallest text.
 
-Basier Square Mono replaces the earlier provisional description
-of type 5 as a distressed typewriter font.
+Use the actual monospaced character of Basier Square Mono.
 Do not add artificial serif shapes or distressed ink by default.
 
 ## Enabled combinations
@@ -120,12 +154,12 @@ Do not add artificial serif shapes or distressed ink by default.
 ### 3 alone
 
 Type 3 handles titles and supporting information.
-Establish hierarchy chiefly through size and spacing.
+Establish hierarchy chiefly through size, spacing and placement.
 
 ### 3 + 4
 
 Type 3: title.
-Type 4: supporting paragraphs and practical information.
+Type 4: supporting descriptions and practical information.
 
 ### 3 + 5
 
@@ -135,34 +169,47 @@ Type 5: supporting information.
 ### 3 + 4 + 5
 
 Type 3: title.
-Type 4: supporting paragraphs and practical information.
+Type 4: supporting descriptions and practical information.
 Type 5: specimen labels.
 
 Choose the simplest combination that serves the content.
+Do not introduce extra typography roles without a corresponding
+information role.
 
 ## Rendering
 
-Use reference-guided image generation for type 3.
+For type 3, inspect the approved reference and use reference-guided
+image generation or individually drawn lettering.
 
 For types 4 and 5, use actual font files when exact typography is required.
-Generate illustration with reserved text-free areas, then typeset separately.
+Reserve text-free areas during illustration generation,
+then typeset separately.
 
-Keep text editable when the output format supports it.
 Do not claim exact named-font rendering from image generation alone.
+
+Preserve editable text when supported by the output format.
+Do not silently replace an unavailable font.
+
+## Quality gate
+
+Check that:
+
+- Type 3 retains the approved poster's thin, light and relaxed character.
+- Natural variation is visible without exaggerated distortion.
+- Titles and supporting text belong to a coherent writing family.
+- Supporting information remains comfortably readable.
+- Exact wording, numbers and punctuation are correct.
+- Selected typography roles and pairings are respected.
+- Font substitution has not occurred without disclosure.
+- Handwritten placement follows handwriting-layout.md.
 
 ## Specimen comparison
 
-Compare the four enabled combinations using:
+Compare enabled combinations using identical copy, canvas,
+background and text regions.
 
-- The same title.
-- The same short description.
-- The same date and time.
-- The same address.
-- A label only where that role is being demonstrated.
-- The same canvas, background and placement.
+Include a title, short description, date, time and location.
+Include a label only when demonstrating that role.
 
 Mark invented specimen information as sample copy outside the artwork.
 Do not present it as factual event information.
-
-Check title scale, small-text readability, line spacing,
-letter spacing and distinction between information roles.
