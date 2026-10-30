@@ -1,27 +1,32 @@
+
 {
+  "skill_name": "hand-drawn-poster-skill",
   "evals": [
     {
-      "id": "test-01",
+      "id": 1,
       "prompt": "Create a poster featuring a cafe storefront.",
-      "expected": [
+      "expected_output": "A hand-drawn cafe poster with recognizable architecture and readable typography.",
+      "expectations": [
         "Recognizable architectural structure",
         "Imperfect hand-drawn contours",
         "Clear typographic hierarchy"
       ]
     },
     {
-      "id": "test-02",
+      "id": 2,
       "prompt": "Create a poster featuring a cup of tea.",
-      "expected": [
+      "expected_output": "An object-focused hand-drawn poster with balanced negative space.",
+      "expectations": [
         "Simplified object illustration",
         "No unnecessary architecture",
         "Balanced negative space"
       ]
     },
     {
-      "id": "test-03",
+      "id": 3,
       "prompt": "Create a poster featuring a clock.",
-      "expected": [
+      "expected_output": "A minimal symbolic poster with expressive lettering.",
+      "expectations": [
         "Minimal symbolic illustration",
         "Expressive hand lettering",
         "Readable composition"
